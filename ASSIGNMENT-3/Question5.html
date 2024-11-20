@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery List Manipulation</title>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function () {
+                $('#topic-list').append('<li>CSS</li>');
+            });
+            $("#b2").click(function () {
+                $('#topic-list').prepend('<li>Introduction to Full Stack Development</li>');
+            });
+            $("#b3").click(function () {
+                $('#topic-list').after('<p>Topics updated</p>');
+            });
+            $("#b4").click(function () {
+                $('#topic-list').before('<h2>List of Topics Covered</h2>');
+            });
+        });
+    </script>
+</head>
+<body>
+    <ul id="topic-list">
+        <li>Getting Started with Full Stack</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+
+    <button id="b1">Append</button>
+    <button id="b2">Prepend</button>
+    <button id="b3">After</button>
+    <button id="b4">Before</button>
+
+</body>
+</html>

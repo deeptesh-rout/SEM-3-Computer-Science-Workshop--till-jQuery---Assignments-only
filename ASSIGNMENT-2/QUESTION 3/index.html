@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Interaction with CSS</title>
+    <style>
+        /* Initial styling for the div */
+        #special-div {
+            font-size: 20px;
+            color: black;
+        }
+
+        /* Styling for the image */
+        img {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+        }
+
+        /* Change text color when the image is hovered */
+        img:hover + #special-div {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Image that triggers hover events -->
+    <img src="bird.jpg" alt="Hover over this image" id="hover-image">
+
+    <!-- Special Div with text -->
+    <div id="special-div">My Special Div</div>
+
+</body>
+</html>

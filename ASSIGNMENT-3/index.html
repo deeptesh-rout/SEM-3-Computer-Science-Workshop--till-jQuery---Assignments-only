@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline Offset Example</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+            outline: 3px solid red;
+            outline-offset: 40px; /* Distance between border and outline */
+            margin: 20px;
+        }
+
+        .box:hover {
+            outline-color: blue;
+            outline-offset: 5px; /* Reduces space on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Hover over me!</div>
+</body>
+</html>

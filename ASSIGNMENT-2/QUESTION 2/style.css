@@ -1,0 +1,38 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling the product row */
+.product-row {
+    display: flex;
+    justify-content: space-between; /* Distribute products evenly */
+    margin-top: 20px;
+}
+
+/* Styling each product container using the box model */
+.product-container {
+    width: 400px;  /* Content width */
+    padding: 20px; /* Padding around the content */
+    border: 10px solid #ddd; /* Border */
+    margin: 15px;  /* Margin around the product */
+    background-color: #fff; /* White background for product container */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: left; /* Align content to the left */
+}
+
+/* Styling the images inside the product container */
+.product-container img {
+    width: 100%; /* Make image fill the container width */
+    height: auto; /* Maintain image aspect ratio */
+    margin-bottom: 10px; /* Add space between image and description */
+}
+
+/* Paragraph styling for product descriptions */
+.product-container p {
+    font-size: 16px;
+    color: #333;
+}

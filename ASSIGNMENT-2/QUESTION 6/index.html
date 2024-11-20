@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        /* General table styling */
+        table {
+            width: 80%;  /* Set table width */
+            border-collapse: collapse; /* Merge borders */
+            margin: 20px auto; /* Center the table */
+        }
+
+        /* Styling for table cells (both th and td) */
+        th, td {
+            border: 2px solid #333;  /* Add border around cells */
+            padding: 12px 15px;  /* Add padding inside cells */
+            text-align: center;  /* Center text inside cells */
+            height: 50px;  /* Set row height */
+        }
+
+        /* Header row styling */
+        th {
+            background-color: #444;  /* Dark background for headers */
+            color: #fff;  /* White text for headers */
+        }
+
+        /* Background color for specific rows: 1st, 4th, 7th, 10th, etc. */
+        tr:nth-child(3n+1) {
+            background-color: #f2f2f2;  /* Light gray background for every 3rd row */
+        }
+
+        /* Hover effect for table rows */
+        tr:hover {
+            background-color: #d3d3d3; /* Highlight row on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>25</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bob</td>
+                <td>30</td>
+                <td>Los Angeles</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Charlie</td>
+                <td>22</td>
+                <td>Chicago</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Diana</td>
+                <td>28</td>
+                <td>Houston</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Eva</td>
+                <td>26</td>
+                <td>Miami</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Frank</td>
+                <td>24</td>
+                <td>San Francisco</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Grace</td>
+                <td>29</td>
+                <td>Boston</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Henry</td>
+                <td>31</td>
+                <td>Seattle</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Irene</td>
+                <td>27</td>
+                <td>Dallas</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Jack</td>
+                <td>23</td>
+                <td>Austin</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

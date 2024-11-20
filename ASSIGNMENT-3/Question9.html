@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Custom Popup Box</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Overlay styling */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Popup box styling */
+        #popup-box {
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Close button styling */
+        #close-popup {
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Button to open the popup -->
+    <button id="show-popup">Show Popup</button>
+
+    <!-- Overlay and Popup Box -->
+    <div id="overlay">
+        <div id="popup-box">
+            <p>This is a custom popup box!</p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            // Show the popup
+            $('#show-popup').click(function(){
+                $('#overlay').fadeIn();
+            });
+
+            // Close the popup
+            $('#close-popup').click(function(){
+                $('#overlay').fadeOut();
+            });
+        });
+    </script>
+
+</body>
+</html>

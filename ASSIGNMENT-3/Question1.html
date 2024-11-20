@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Color and Toggle Visibility</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <button id="redButton">Red</button>
+  <button id="blueButton">Blue</button>
+  <button id="greenButton">Green</button>
+  <button id="toggleDivs">Toggle Div Visibility</button>
+
+  <div>This is a sample content inside a <code>div</code> element.</div>
+  <div>Here's another <code>div</code> element with some text.</div>
+
+  <script>
+    $(document).ready(function() {
+      $('#redButton').click(function() {
+        $('body').css('background-color', 'red');
+      });
+
+      $('#blueButton').click(function() {
+        $('body').css('background-color', 'blue');
+      });
+
+      $('#greenButton').click(function() {
+        $('body').css('background-color', 'green');
+      });
+      $('#toggleDivs').click(function() {
+        $('div').toggle();
+      });
+    });
+  </script>
+
+</body>
+</html>

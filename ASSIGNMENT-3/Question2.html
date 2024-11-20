@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+
+            $("#myDiv").click(function() {
+                $(this).text("The text has been changed!");
+            });
+            $("#myDiv").dblclick(function() {
+                $(this).css("background-color", "green");
+            });
+            $("#myDiv").hover(
+                function() {
+                    (this).css("border", "5px solid green");
+                }, 
+                function() {
+                    $(this).css("border", "none");
+                }
+            );
+
+
+        });
+    </script>
+</head>
+<body>
+
+<div id="myDiv" style="padding: 20px; background-color: lightblue; cursor: pointer;">
+    Click me to change my text!
+</div>
+
+</body>
+</html>
